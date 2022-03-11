@@ -1,7 +1,6 @@
 package com.silveirasolutions.dsmovie.entities;
 
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.Embeddable;
 import javax.persistence.JoinColumn;
@@ -9,7 +8,8 @@ import javax.persistence.ManyToOne;
 import java.io.Serializable;
 
 @NoArgsConstructor
-@Data
+@Getter
+@Setter
 @Embeddable
 public class ScorePK implements Serializable {
     private static final long serialVersionUID = 1L;
