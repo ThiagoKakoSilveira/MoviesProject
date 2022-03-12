@@ -11,9 +11,6 @@ type StarProps = {
     fill: number;
 }
 
-// EX:
-// getFills(3.5) => [1, 1, 1, 0.5, 0]
-// getFills(4.1) => [1, 1, 1, 1, 0.5]
 function getFills(score: number) {
 
     const fills = [0, 0, 0, 0, 0];
@@ -32,11 +29,11 @@ function getFills(score: number) {
     return fills;
 }
 
-function Star( {fill} : StarProps ) {
+function Star({ fill }: StarProps) {
     if (fill === 0) {
         return <StarEmpty />
     }
-    else if (fill === 1){
+    else if (fill === 1) {
         return <StarFull />
     }
     else {
